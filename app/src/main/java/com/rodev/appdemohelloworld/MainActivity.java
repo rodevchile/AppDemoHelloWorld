@@ -3,6 +3,7 @@ package com.rodev.appdemohelloworld;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         txtresult = findViewById(R.id.txt_msg);
         img = findViewById(R.id.img);
         img.setVisibility(View.INVISIBLE);
+        Log.d("INFO","load ok");
     }
 
     /**
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             img.setVisibility(View.VISIBLE);
             txtresult.setText("Hi "+ txtname.getText().toString()+"!!!");
             txtname.setText("");
+            Log.d("Info", "function ok");
         }
 
     }
