@@ -25,13 +25,18 @@ public class MainActivity extends AppCompatActivity {
         img.setVisibility(View.INVISIBLE);
     }
 
+    /**
+     * Method hi ok
+     * @param view
+     */
     public void hi(View view) {
         if (txtname.getText().toString().isEmpty()){
             Toast.makeText(this, "Please enter your name :)", Toast.LENGTH_LONG).show();
         }else{
             img.setVisibility(View.VISIBLE);
             txtresult.setText("Hi "+ txtname.getText().toString()+"!!!");
-
+            txtname.setText("");
         }
+
     }
 }
