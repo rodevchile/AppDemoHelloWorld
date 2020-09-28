@@ -14,5 +14,11 @@ public class Hello {
         return nombre + " "+ edad;
     }
 
+    public void hello(){
+
+    }
+    public int calculate(int x){
+        return 0;
+    }
 
 }
