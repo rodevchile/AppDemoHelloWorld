@@ -3,6 +3,7 @@ package com.rodev.appdemohelloworld.model;
 public class Hello {
     public String nombre;
     public String edad;
+    public int state;
 
 
     public Hello(String nombre, String edad) {
@@ -19,6 +20,10 @@ public class Hello {
     }
     public int calculate(int x){
         return 0;
+    }
+
+    public String backtoHistoey(){
+        return "NULL";
     }
 
 }
